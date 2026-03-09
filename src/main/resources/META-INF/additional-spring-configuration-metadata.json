@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "spring-security.app.lifetime",
+    "type": "java.lang.String",
+    "description": "A description for 'spring-security.app.lifetime'"
+  },
+  {
+    "name": "spring-security.app.secret",
+    "type": "java.lang.String",
+    "description": "A description for 'spring-security.app.secret'"
+  }
+]}

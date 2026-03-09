@@ -28,4 +28,13 @@ public class JwtCore {
                 .signWith(Keys.hmacShaKeyFor(secret.getBytes()))
                 .compact();
     }
+
+    public String getNameFromJwt(String token) {
+        return Jwts.parser()
+                .verifyWith(Keys.hmacShaKeyFor(secret.getBytes()))
+                .build()
+                .parseSignedClaims(token)
+                .getPayload()
+                .getSubject();
+    }
 }
